@@ -1,0 +1,974 @@
+
+/* Start First Card */
+
+.dashboard {
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F1F5F9;
+}
+
+.dashboard  .head {
+    width: fit-content;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.dashboard  .head::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+.dashboard .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.dashboard .content .card {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.dashboard .content .card:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .content .card:first-child .top {
+    padding: 20px;
+    background-color: var(--secondry-color);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.dashboard .content .card:first-child .top .txt h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.dashboard .content .card:first-child .top .txt p {
+    color: var(--grey-color);
+    font-weight: 600;
+}
+
+.dashboard .content .card:first-child .top .image {
+    flex-basis: 40%;
+}
+
+.dashboard .content .card:first-child .top img {
+    width: 100%;
+}
+
+.dashboard .content .card:first-child .bottom {
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border-radius: 0 0 6px 6px;
+}
+
+.dashboard .content .card:first-child .bottom .image {
+    position: absolute;
+    top: -25px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.dashboard .content .card:first-child .bottom .image img {
+    width: 60px;
+}
+
+.dashboard .content .card:first-child .bottom .experience {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    border-top: 2px solid var(--secondry-color);
+    border-bottom: 2px solid var(--secondry-color);
+}
+
+.dashboard .content .card:first-child .bottom .experience h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dashboard .content .card:first-child .bottom .experience p {
+    font-size: 14px;
+    color: var(--grey-color);
+    margin-top: 5px;
+}
+
+.dashboard .content .card:first-child .bottom button {
+    width: fit-content;
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.dashboard .content .card:first-child .bottom button:hover {
+    background-color: var(--blue-alt-color);
+}
+
+/* End First Card */
+/* Start Second Card */
+.dashboard .content .card:nth-child(2) {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.dashboard .content .card h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.dashboard .content .card:nth-child(2) p {
+    font-size: 16px;
+    color: var(--grey-color);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.dashboard .content .card:nth-child(2) form * {
+    display: block;
+    width: 100%;
+}
+
+.dashboard .content .card:nth-child(2) form input:first-child {
+    margin-bottom: 20px;
+    background-color: var(--secondry-color);
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.dashboard .content .card:nth-child(2) form textarea {
+    padding: 10px;
+    border: none;
+    background-color: var(--secondry-color);
+    font-size: 14px;
+    border-radius: 10px;
+    height: 130px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.dashboard .content .card:nth-child(2) form input[type="submit"] {
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    margin-left: auto;
+    background-color: var(--blue-color);
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.dashboard .content .card:nth-child(2) form input[type="submit"]:hover {
+    background-color: var(--blue-alt-color);
+}
+
+.dashboard .content .card:nth-child(2) form *:focus {
+    outline: none;
+    border: none;
+}
+
+/* End Second Card */
+/* Start Third Card */
+
+.dashboard .content .card:nth-child(3) {
+    background: white;
+    padding: 20px;
+}
+
+.dashboard .content .card:nth-child(3) p,
+.dashboard .content .card:nth-child(4) p {
+    color: var(--grey-color);
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent i {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(1) i {
+    background-color: #CCE3FF;
+    color: #0075FF;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(2) i {
+    background-color: #FDECCE;
+    color: #F59E0B;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(3) i {
+    background-color: #D2F4DF;
+    color: #22C55E;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent .second {
+    flex-basis: 80%;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent .second :first-child {
+    color: var(--grey-color);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent .second :nth-child(2) {
+    font-weight: 700;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent .second :last-child {
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(1) .second :last-child {
+    background-color: #CCE3FF;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(2) .second :last-child {
+    background-color: #FDECCE;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(3) .second :last-child {
+    background-color: #D2F4DF;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(1) .second :last-child::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(2) .second :last-child::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 55%;
+    height: 100%;
+    background-color: #F59E0B;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(3) .second :last-child:not(.last)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 75%;
+    height: 100%;
+    background-color: #22C55E;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(1) .second :last-child:not(.last)::after {
+    content: "80%";
+    position: absolute;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -35px;
+    left: 80%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 6px;
+    color: white;
+    background-color: var(--blue-color);
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(1) .second :last-child .last {
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 80%;
+    transform: translateX(-50%);
+    border-color: var(--blue-color) white white white;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(2) .second :last-child:not(.last)::after {
+    content: "55%";
+    position: absolute;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -35px;
+    left: 55%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 6px;
+    color: white;
+    background-color: #F59E0B;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(2) .second :last-child .last {
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 55%;
+    transform: translateX(-50%);
+    border-color: #F59E0B white white white;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(3) .second :last-child:not(.last)::after {
+    content: "75%";
+    position: absolute;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -35px;
+    left: 75%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 6px;
+    color: white;
+    background-color: #22C55E;
+}
+
+.dashboard .content .card:nth-child(3) .targets .parent:nth-child(3) .second :last-child .last {
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 75%;
+    transform: translateX(-50%);
+    border-color: #22C55E white white white;
+    border-width: 5px;
+    border-style: solid;
+}
+
+/* End Third Card */
+/* Start Fourth Card */
+.dashboard .content .card:nth-child(4) .inform {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    gap: 30px;
+}
+
+.dashboard .content .card:nth-child(4) .inform div {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+}
+
+.dashboard .content .card:nth-child(4) .inform div:nth-child(1) i {
+    color: #F59E0B;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.dashboard .content .card:nth-child(4) .inform div:nth-child(2) i {
+    color: var(--blue-color);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.dashboard .content .card:nth-child(4) .inform div:nth-child(3) i {
+    color: #22C55E;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.dashboard .content .card:nth-child(4) .inform div:nth-child(4) i {
+    color: #F44336;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.dashboard .content .card:nth-child(4) .inform div h3 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.dashboard .content .card:nth-child(4) .inform div p {
+    font-size: 14px;
+}
+/* End Fourth Card */
+/* Start Fifth Card */
+.dashboard .content .card:nth-child(5) .news {
+    margin-top: 30px;
+}
+
+.dashboard .content .card:nth-child(5) .news .holding {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(204, 204, 204 , .3);
+}
+
+.dashboard .content .card:nth-child(5) .news .holding:last-child {
+    border: none;
+}
+
+.dashboard .content .card:nth-child(5) .news .holding .image {
+    flex-basis: 25%;
+}
+
+.dashboard .content .card:nth-child(5) .news .holding .image img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.dashboard .content .card:nth-child(5) .news .holding .txt {
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard .content .card:nth-child(5) .news .holding .txt .text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.dashboard .content .card:nth-child(5) .news .holding .txt .text p {
+    font-size: 14px;
+    color: var(--grey-color);
+}
+
+.dashboard .content .card:nth-child(5) .news .holding .txt .time {
+    padding: 10px;
+    font-size: 14px;
+    background-color: var(--secondry-color);
+    border-radius: 10px;
+}
+/* End Fifth Card */
+/* Start Sixth Card */
+.dashboard .content .card:nth-child(6) .tasks {
+    margin-top: 20px;
+}
+
+.dashboard .content .card:nth-child(6) .tasks .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(204, 204, 204, .3);
+}
+
+.dashboard .content .card:nth-child(6) .tasks .task:nth-child(4) {
+    opacity: .3;
+}
+
+.dashboard .content .card:nth-child(6) .tasks .task:last-child {
+    border: none;
+}
+
+.dashboard .content .card:nth-child(6) .tasks .task .txt h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.dashboard .content .card:nth-child(6) .tasks .task .txt p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--grey-color);
+}
+
+.dashboard .content .card:nth-child(6) .tasks .task:nth-child(4) .txt * {
+    text-decoration: line-through;
+}
+
+.dashboard .content .card:nth-child(6) .tasks .task:not(:nth-child(4)) i {
+    transition: .3s color;
+    cursor: pointer;
+}
+
+.dashboard .content .card:nth-child(6) .tasks .task:not(:nth-child(4)) i:hover {
+    color: red;
+}
+/* End Sixth Card */
+/* Start seventh Card */
+.dashboard .content .card:nth-child(7) .items {
+    margin-top: 20px;
+}
+
+.dashboard .content .card:nth-child(7) .items .headding {
+    color: var(--grey-color);
+}
+
+.dashboard .content .card:nth-child(7) .items div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dashboard .content .card:nth-child(7) .items div:not(.headding) span:first-child {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dashboard .content .card:nth-child(7) .items div:not(.headding) span:last-child {
+    font-size: 14px;
+    background-color: var(--secondry-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* End seventh Card */
+/* Start Eighth Card */
+.dashboard .content .card:nth-child(8) .uploads {
+    margin-top: 20px;
+}
+
+.dashboard .content .card:nth-child(8) .uploads .upload {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard .content .card:nth-child(8) .uploads .upload .image {
+    flex-basis: 8%;
+}
+
+.dashboard .content .card:nth-child(8) .uploads .upload .image img {
+    width: 100%;
+}
+
+.dashboard .content .card:nth-child(8) .uploads .upload .txt {
+    flex-basis: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .content .card:nth-child(8) .uploads .upload .txt  h3 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.dashboard .content .card:nth-child(8) .uploads .upload .txt p {
+    color: var(--grey-color);
+    font-size: 14px;
+}
+
+.dashboard .content .card:nth-child(8) .uploads .upload .type {
+    font-size: 13px;
+    background-color: var(--secondry-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* End Eighth Card */
+/* Start ninth Card */
+.dashboard .content .card:nth-child(9) .projects {
+    margin-top: 20px;
+}
+
+.dashboard .content .card:nth-child(9) .projects .project {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.dashboard .content .card:nth-child(9) .projects .project span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--blue-color);
+    position: relative;
+    
+}
+
+.dashboard .content .card:nth-child(9) .projects .project:not(:last-child) span::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+}
+
+@keyframes hide {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.dashboard .content .card:nth-child(9) .projects .project:nth-child(4) span::before {
+    animation: hide 1s infinite;
+}
+
+.dashboard .content .card:nth-child(9) .projects .project:not(:last-child) span::after {
+    content: "";
+    width: 2px;
+    height: 30px;
+    background-color: var(--blue-color);
+    position: absolute;
+    bottom: -32px;
+}
+
+.dashboard .content .card:nth-child(9) img {
+    position: absolute;
+    width: 170px;
+    opacity: 0.1;
+    right: 0;
+    bottom: 0;
+}
+/* End ninth Card */
+/* Start Tenth Card */
+.dashboard .content .card:nth-child(10) .reminds {
+    margin-top: 20px;
+}
+
+.dashboard .content .card:nth-child(10) .reminds .remind {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard .content .card:nth-child(10) .reminds .remind span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 40px;
+    position: relative;
+}
+
+.dashboard .content .card:nth-child(10) .reminds .remind span::after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+}
+
+.dashboard .content .card:nth-child(10) .reminds .remind:nth-child(1) span, 
+.dashboard .content .card:nth-child(10) .reminds .remind:nth-child(1) span::after {
+    background-color: var(--blue-alt-color);
+}
+
+.dashboard .content .card:nth-child(10) .reminds .remind:nth-child(2) span, 
+.dashboard .content .card:nth-child(10) .reminds .remind:nth-child(2) span::after {
+    background-color: #22C55E;
+}
+
+.dashboard .content .card:nth-child(10) .reminds .remind:nth-child(3) span, 
+.dashboard .content .card:nth-child(10) .reminds .remind:nth-child(3) span::after {
+    background-color: #F59E0B;
+}
+
+.dashboard .content .card:nth-child(10) .reminds .remind:nth-child(4) span, 
+.dashboard .content .card:nth-child(10) .reminds .remind:nth-child(4) span::after {
+    background-color: #F44336;
+}
+
+.dashboard .content .card:nth-child(10) .reminds .remind p:first-child {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.dashboard .content .card:nth-child(10) .reminds .remind p:last-child {
+    font-size: 13px;
+    color: #555;
+}
+/* End Tenth Card */
+/* Start 11st Card */
+.dashboard .content .card:nth-child(11) .post {
+    margin-top: 20px;
+}
+
+.dashboard .content .card:nth-child(11) .post .head {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard .content .card:nth-child(11) .post .head .image {
+    flex-basis: 10%;
+    margin-right: 10px;
+}
+
+.dashboard .content .card:nth-child(11) .post .head .image img {
+    width: 100%;
+}
+
+.dashboard .content .card:nth-child(11) .post .head .txt P:first-child {
+    font-size: 18px;
+    margin-bottom: 10px; 
+}
+
+.dashboard .content .card:nth-child(11) .post .head .txt p:last-child {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
+.dashboard .content .card:nth-child(11) .post .head + .txt {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid var(--secondry-color);
+    border-bottom: 1px solid var(--secondry-color);
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.dashboard .content .card:nth-child(11) .post .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--grey-color);
+}
+
+.dashboard .content .card:nth-child(11) .post .foot i {
+    margin-right: 10px;
+}
+/* End 11st Card */
+/* Start 12st Card */
+.dashboard .content .card:nth-child(12) .links {
+    margin-top: 20px;
+}
+
+.dashboard .content .card:nth-child(12) .links .link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard .content .card:nth-child(12) .links .link i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(1) i {
+    background-color: #1DA1F2;
+} 
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(2) i {
+    background-color: #1877F2;
+} 
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(3) i {
+    background-color: #FF0000;
+} 
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(4) i {
+    background-color: #0077B5;
+} 
+
+.dashboard .content .card:nth-child(12) .links .link .txt {
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard .content .card:nth-child(12) .links .link .txt p {
+    font-weight: 600;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(1) .txt {
+    background-color: #D1ECFD;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(1) .txt p {
+    color: #1DA1F2;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(2) .txt {
+    background-color: #D0E4FD;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(2) .txt p {
+    color: #3FAEF4;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(3) .txt {
+    background-color: #FFCCCC;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(3) .txt p {
+    color: #FF0000;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(4) .txt {
+    background-color: #CCE4F0;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(4) .txt p {
+    color: #0077B5;
+}
+
+.dashboard .content .card:nth-child(12) .links .link .txt div {
+    padding: 15px;
+    width: 85px;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    border-radius: 10px;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(1) .txt div {
+    background-color: #1DA1F2;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(2) .txt div {
+    background-color: #1877F2;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(3) .txt div {
+    background-color: #FF0000;
+}
+
+.dashboard .content .card:nth-child(12) .links .link:nth-child(4) .txt div {
+    background-color: #0077B5;
+}
+/* End 12st Card */
+/* Start 13st Card */
+.dashboard .card:last-child:not(.dashboard .content .card) {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.dashboard .card:last-child table {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid var(--secondry-color);
+    border-collapse: collapse;
+}
+
+@media (max-width: 992px) {
+    .dashboard .card:last-child table {
+        width: 900px;
+    }
+}
+
+.dashboard .card:last-child table thead tr th {
+    padding: 20px 20px 20px 10px;
+    font-size: 16px;
+    text-align: left;
+    background-color: var(--secondry-color);
+}
+
+.dashboard .card:last-child table tbody td {
+    padding: 20px 20px 20px 10px;
+    border: 1px solid var(--secondry-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.dashboard .card:last-child table img {
+    width: 35px;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid white;
+}
+
+.dashboard .card:last-child table tbody tr td div {
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.dashboard .card:last-child table tbody tr:nth-child(1) td div {
+    background-color: #F59E0B;
+}
+
+.dashboard .card:last-child table tbody tr:nth-child(2) td div {
+    background-color: #F59E0B;
+}
+
+.dashboard .card:last-child table tbody tr:nth-child(n + 3):nth-child(-n + 4) td div {
+    background-color: #22C55E;
+}
+
+.dashboard .card:last-child table tbody tr:nth-last-child(2) td div {
+    background-color: #F44336;
+}
+
+.dashboard .card:last-child table tbody tr:nth-last-child(1) td div {
+    background-color: #22C55E;
+}
+
+/* End 13st Card */

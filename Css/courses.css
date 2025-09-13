@@ -1,0 +1,104 @@
+.courses {
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F1F5F9;
+}
+
+.courses  .head {
+    width: fit-content;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.courses  .head::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+.courses .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.courses .content .box {
+    position: relative;
+    background-color: white;
+}
+
+.courses .content .box .client {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    border: 2px solid white;
+    top: 15px;
+    left: 15px;
+}
+
+.coursess .contnet .box .top {
+    height: 50%;
+}
+
+.courses .content .box .top img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.courses .content .box .bottom .txt {
+    padding: 20px;
+    border-bottom: 1px solid var(--secondry-color);
+}
+
+.courses .content .box .bottom .txt h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.courses .content .box .bottom .txt p {
+    line-height: 1.7;
+    color: var(--grey-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.courses .content .box .bottom .info {
+    background-color: var(--blue-color);
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.courses .content .box .bottom .info + .row {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses .content .box .bottom .row span {
+    font-size: 14px;
+    color: var(--grey-color);
+    font-weight: 500;
+}
+
+.courses .content .box .bottom .row span:nth-child(2) span {
+    font-size: 16px;
+}

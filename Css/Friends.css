@@ -1,0 +1,142 @@
+.friends {
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F1F5F9;
+}
+
+.friends  .head {
+    width: fit-content;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.friends  .head::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+.friends .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.friends .content .box {
+    position: relative;
+    background-color: white;
+    padding: 15px;
+}
+
+.friends .content .box .contact {
+    display: flex;
+    position: absolute;
+}
+
+.friends .content .box .contact i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--secondry-color);
+    color: #666666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: .3s background-color, .3s color;
+    font-size: 14px;
+}
+
+.friends .content .box .contact i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.friends .content .box .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.friends .content .txt .image {
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+
+.friends .content .box .txt img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.friends .content .box .txt h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.friends .content .box .txt p {
+    font-size: 14px;
+    color: var(--grey-color);
+}
+
+.friends .content .box .num {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    border-top: 1px solid var(--secondry-color);
+    border-bottom: 1px solid var(--secondry-color);
+    position: relative;
+}
+
+.friends .content .box .num div {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.friends .content .box .num div:last-of-type {
+    margin-bottom: 0;
+}
+
+.friends .content .box .num p {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #FCEBCD;
+    font-weight: bold;
+}
+
+.friends .content .box .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friends .content .box .bottom p {
+    font-size: 13px;
+    color: var(--grey-color);
+}
+
+.friends .content .box .bottom .links a {
+    color: white;
+    background-color: var(--blue-color);
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.friends .content .box .bottom .links a:last-child {
+    background-color: #F44336;
+}

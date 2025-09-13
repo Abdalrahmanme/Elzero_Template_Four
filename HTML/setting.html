@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/settings.css">
+    <link rel="stylesheet" href="../Css/all.css">
+    <link rel="stylesheet" href="../Css/all.min.css">
+    <link rel="stylesheet" href="../Css/normlize.css">
+</head>
+<body>
+    <div class="left">
+        <h2>Elzero</h2>
+        <ul>
+            <li><a href="dashboard.html"><i class="fa-regular fa-chart-bar fa-fw"></i> <span>Dashboard</span></a></li>
+            <li><a href="setting.html"><i class="fa-solid fa-gear fa-fw"></i> <span>Settings</span></a></li>
+            <li><a href="profile.html"><i class="fa-regular fa-user fa-fw"></i> <span>Profile</span></a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-diagram-project fa-fw"></i> <span>Projects</span></a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> <span>Courses</span></a></li>
+            <li><a href="friends.html"><i class="fa-regular fa-circle-user fa-fw"></i> <span>Friends</span></a></li>
+            <li><a href="Files.html"><i class="fa-regular fa-file fa-fw"></i> <span>Files</span></a></li>
+            <li><a href="Plans.html"><i class="fa-regular fa-credit-card fa-fw"></i> <span>Plans</span></a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="header">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Type A Keyword">
+            </div>
+            <div class="right-side">
+                <i class="fa-regular fa-bell fa-lg"><span></span></i>
+                <div class="image"><img src="../Pictures/avatar.png" alt="" width="35px"></div>
+            </div>
+        </div>
+        <div class="settings">
+            <h2>Settings</h2>
+            <div class="content">
+                <div class="box">
+                    <h3>Site Control</h3>
+                    <p>Control The Website If There Is Maintenance</p>
+                    <div class="checkbox">
+                        <div class="txt">
+                            <h4>Website Control</h4>
+                            <p>Open/Close Website And Type The Reason</p>
+                        </div>
+                        <div class="check"><i class="fa-solid fa-check open"></i><i class="fa-solid fa-xmark close"></i></div>
+                    </div>
+                    <textarea placeholder="Close Message Content"></textarea>
+                </div>
+                <div class="box">
+                    <h3>General Info</h3>
+                    <p>General Information About Your Account</p>
+                    <form>
+                        <label>First Name</label>
+                        <input type="text" placeholder="First Name">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Last Name">
+                        <label>Email</label>
+                        <div>
+                            <input type="email" readonly placeholder="o@nn.sa">
+                            <span><a href="#">Change</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="box">
+                    <h3>Security Info</h3>
+                    <p>Security Information About Your Account</p>
+                    <div class="fields">
+                        <div>
+                            <div class="text">
+                                <h4>Password</h4>
+                                <p>Last Change On 25/10/2021</p>
+                            </div>
+                            <button><a href="#">Change</a></button>
+                        </div>
+                        <div>
+                            <div class="text">
+                                <h4>Two-Factor Authentication</h4>
+                                <p>Enable/Disable The Feature</p>
+                            </div>
+                            <div class="check"><i class="fa-solid fa-check open"></i><i class="fa-solid fa-xmark close"></i></div>
+                        </div>
+                        <div>
+                            <div class="text">
+                                <h4>Devices</h4>
+                                <p>Check The Login Devices List</p>
+                            </div>
+                            <button><a href="#">Devices</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Social Info</h3>
+                    <p>Social Media Information</p>
+                    <div class="social">
+                        <div>
+                            <input type="text" placeholder="Twitter Username">
+                            <i class="fa-brands fa-twitter center-flex c-grey"></i>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Facebook Username">
+                            <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="LinkedIn Username">
+                            <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Youtube Username">
+                            <i class="fa-brands fa-youtube center-flex c-grey"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Widgets Control</h3>
+                    <p>Show/Hide Widgets</p>
+                    <div class="checks">
+                        <div class="check">
+                            <div><i class="fa-solid fa-check open" style="opacity: 1; animation:none;"></i></div>
+                            <div>Quick Draft</div>
+                        </div>
+                        <div class="check">
+                            <div><i class="fa-solid fa-check open"></i></div>
+                            <div>Yearly Targets</div>
+                        </div>
+                        <div class="check">
+                            <div><i class="fa-solid fa-check open" style="opacity: 1; animation:none;"></i></div>
+                            <div>Tickets Statistics</div>
+                        </div>
+                        <div class="check">
+                            <div><i class="fa-solid fa-check open" style="opacity: 1; animation:none;"></i></div>
+                            <div>Latest News</div>
+                        </div>
+                        <div class="check">
+                            <div><i class="fa-solid fa-check open"></i></div>
+                            <div>Latest Tasks</div>
+                        </div>
+                        <div class="check">
+                            <div><i class="fa-solid fa-check open"></i></div>
+                            <div>TOp Search Item</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Backup Manager</h3>
+                    <p>Control Backup Time And Location</p>
+                    <div class="radios">
+                        <div>
+                            <div></div>
+                            <p>Daily</p>
+                        </div>
+                        <div>
+                            <div></div>
+                            <p>Weekly</p>
+                        </div>
+                        <div>
+                            <div></div>
+                            <p>Monthly</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flex">
+                        <div class="box">
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <p>Megaman</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <p>Zero</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <p>Sigma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

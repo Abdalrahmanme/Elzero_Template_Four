@@ -1,0 +1,111 @@
+.plans {
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f1f5f9;
+  .head {
+    width: fit-content;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 30px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    .card {
+        background-color: white;
+        .header {
+            padding: 30px 40px;
+            background-color: #22C55E;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 3px solid white;
+            outline: 3px solid #22C55E;
+            margin-bottom: 10px;
+            p:first-child {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            p:last-child {
+                font-size: 30px;
+                display: flex;
+                span {
+                    font-size: 20px;
+                    align-self: flex-start;
+                    margin-right: 5px;
+                }
+            }
+        }
+        ul {
+            margin-bottom: 10px;
+            font-weight: 600;
+            li {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px;
+                border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+                div {
+                    display: flex;
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+            color: white;
+            background-color: #22C55E;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+    .card:nth-child(2) {
+        .header {
+            background-color: #0075FF;
+            outline: 3px solid #0075FF;
+        }
+
+        button {
+            background-color: #0075FF;
+        }
+    }
+    .card:nth-child(3) {
+        .header {
+            background-color: #F59E0B;
+            outline: 3px solid #F59E0B;
+        }
+
+        button {
+            background-color: #F59E0B;
+        }
+
+        .end {
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            color: #555;
+        }
+    }
+  }
+}
